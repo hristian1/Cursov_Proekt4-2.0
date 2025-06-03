@@ -117,10 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Target" xml:space="preserve">
-    <value>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</value>
-  </data>
-  <data name="DefaultSchema" xml:space="preserve">
-    <value>dbo</value>
-  </data>
+  <metadata name="dishesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>362, 17</value>
+  </metadata>
+  <metadata name="proekt4DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="proekt4DataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>151, 17</value>
+  </metadata>
+  <metadata name="proekt4DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="dishesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>362, 17</value>
+  </metadata>
+  <metadata name="proekt4DataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>151, 17</value>
+  </metadata>
+  <metadata name="dishesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>526, 17</value>
+  </metadata>
+  <metadata name="___MigrationHistoryTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>682, 17</value>
+  </metadata>
+  <metadata name="deliveryDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
+  </metadata>
+  <metadata name="dishesTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>156, 58</value>
+  </metadata>
 </root>

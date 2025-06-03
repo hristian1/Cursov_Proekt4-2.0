@@ -7,13 +7,13 @@ namespace Cursov_Proekt4.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class Proekt4 : IMigrationMetadata
+    public sealed partial class CursovProekt4 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Proekt4));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CursovProekt4));
         
         string IMigrationMetadata.Id
         {
-            get { return "202506021410513_Proekt4"; }
+            get { return "202506030547080_CursovProekt4"; }
         }
         
         string IMigrationMetadata.Source

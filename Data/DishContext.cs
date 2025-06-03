@@ -10,10 +10,10 @@ namespace Cursov_Proekt4.Data
 {
     public class DishContext : DbContext
     { 
-        public DishContext() : base("proekt4")
+        public DishContext() : base("Delivery")
         { }
 
-        public DbSet<Dish> Dish { get; set; }
+        public DbSet<Dish> Dishes { get; set; }
         public DbSet<DishType> DishTypes { get; set; }
     
 

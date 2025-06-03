@@ -9,14 +9,11 @@ namespace Cursov_Proekt4
     public class Dish
     {
         public int Id { get; set; }
-        public DishType DishTypeId { get; set; }
-
-        public string DishesName { get; set; }
-        public DishType DishName { get; set; }
-
+        public string DishName { get; set; }
         public string Description { get; set; }
-        public double Price { get; set; }
-        public double Weight { get; set; }
+        public decimal Price { get; set; }
+        public int Weight { get; set; }
+        public int DishTypeId { get; set; }
         public DishType DishType { get; set; }
     }
 }
