@@ -8,5 +8,6 @@ namespace Cursov_Proekt4.Controllers
 {
     public class DishTypeController
     {
+       
     }
 }
