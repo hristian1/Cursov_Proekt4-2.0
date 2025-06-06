@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dishesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proekt4DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proekt4DataSet = new Cursov_Proekt4.proekt4DataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -40,48 +42,37 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.proekt4DataSet = new Cursov_Proekt4.proekt4DataSet();
-            this.proekt4DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dishesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dishesTableAdapter = new Cursov_Proekt4.proekt4DataSetTableAdapters.DishesTableAdapter();
             this.___MigrationHistoryTableAdapter1 = new Cursov_Proekt4.proekt4DataSetTableAdapters.@__MigrationHistoryTableAdapter();
             this.deliveryDataSet = new Cursov_Proekt4.DeliveryDataSet();
             this.dishesTableAdapter1 = new Cursov_Proekt4.DeliveryDataSetTableAdapters.DishesTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dishNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dishTypeIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSetBindingSource)).BeginInit();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.dishesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deliveryDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dishesBindingSource
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.dishNameDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn,
-            this.weightDataGridViewTextBoxColumn,
-            this.dishTypeIdDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.dishesBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(182, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(621, 181);
-            this.dataGridView1.TabIndex = 0;
+            this.dishesBindingSource.DataMember = "Dishes";
+            this.dishesBindingSource.DataSource = this.proekt4DataSetBindingSource;
+            // 
+            // proekt4DataSetBindingSource
+            // 
+            this.proekt4DataSetBindingSource.DataSource = this.proekt4DataSet;
+            this.proekt4DataSetBindingSource.Position = 0;
+            // 
+            // proekt4DataSet
+            // 
+            this.proekt4DataSet.DataSetName = "proekt4DataSet";
+            this.proekt4DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -163,21 +154,6 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Weight";
             // 
-            // proekt4DataSet
-            // 
-            this.proekt4DataSet.DataSetName = "proekt4DataSet";
-            this.proekt4DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // proekt4DataSetBindingSource
-            // 
-            this.proekt4DataSetBindingSource.DataSource = this.proekt4DataSet;
-            this.proekt4DataSetBindingSource.Position = 0;
-            // 
-            // dishesBindingSource
-            // 
-            this.dishesBindingSource.DataMember = "Dishes";
-            this.dishesBindingSource.DataSource = this.proekt4DataSetBindingSource;
-            // 
             // dishesTableAdapter
             // 
             this.dishesTableAdapter.ClearBeforeFill = true;
@@ -194,43 +170,6 @@
             // dishesTableAdapter1
             // 
             this.dishesTableAdapter1.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dishNameDataGridViewTextBoxColumn
-            // 
-            this.dishNameDataGridViewTextBoxColumn.DataPropertyName = "DishName";
-            this.dishNameDataGridViewTextBoxColumn.HeaderText = "DishName";
-            this.dishNameDataGridViewTextBoxColumn.Name = "dishNameDataGridViewTextBoxColumn";
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            // 
-            // weightDataGridViewTextBoxColumn
-            // 
-            this.weightDataGridViewTextBoxColumn.DataPropertyName = "Weight";
-            this.weightDataGridViewTextBoxColumn.HeaderText = "Weight";
-            this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
-            // 
-            // dishTypeIdDataGridViewTextBoxColumn
-            // 
-            this.dishTypeIdDataGridViewTextBoxColumn.DataPropertyName = "DishTypeId";
-            this.dishTypeIdDataGridViewTextBoxColumn.HeaderText = "DishTypeId";
-            this.dishTypeIdDataGridViewTextBoxColumn.Name = "dishTypeIdDataGridViewTextBoxColumn";
             // 
             // textBox6
             // 
@@ -284,11 +223,20 @@
             this.button4.Text = "DELETE";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(201, 20);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(601, 160);
+            this.listBox1.TabIndex = 23;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 245);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -305,14 +253,12 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dishesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deliveryDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -320,8 +266,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
@@ -339,18 +283,13 @@
         private proekt4DataSetTableAdapters.__MigrationHistoryTableAdapter ___MigrationHistoryTableAdapter1;
         private DeliveryDataSet deliveryDataSet;
         private DeliveryDataSetTableAdapters.DishesTableAdapter dishesTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dishNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn weightDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dishTypeIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
