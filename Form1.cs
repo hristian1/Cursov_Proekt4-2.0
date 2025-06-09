@@ -25,5 +25,15 @@ namespace Cursov_Proekt4
             this.dishesTableAdapter.Fill(this.proekt4DataSet.Dishes);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
