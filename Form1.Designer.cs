@@ -47,14 +47,14 @@
             this.___MigrationHistoryTableAdapter1 = new Cursov_Proekt4.proekt4DataSetTableAdapters.@__MigrationHistoryTableAdapter();
             this.deliveryDataSet = new Cursov_Proekt4.DeliveryDataSet();
             this.dishesTableAdapter1 = new Cursov_Proekt4.DeliveryDataSetTableAdapters.DishesTableAdapter();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelate = new System.Windows.Forms.Button();
+            this.btnFind = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnAll = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dishesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proekt4DataSet)).BeginInit();
@@ -81,18 +81,18 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.RosyBrown;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(24, 28);
+            this.label1.Location = new System.Drawing.Point(24, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.Size = new System.Drawing.Size(46, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "DishId";
+            this.label1.Text = "Number";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.RosyBrown;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(5, 64);
+            this.label2.Location = new System.Drawing.Point(5, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 2;
@@ -101,7 +101,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.LightSalmon;
-            this.textBox1.Location = new System.Drawing.Point(65, 25);
+            this.textBox1.Location = new System.Drawing.Point(65, 45);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(111, 20);
             this.textBox1.TabIndex = 7;
@@ -109,7 +109,7 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.LightSalmon;
-            this.textBox2.Location = new System.Drawing.Point(65, 57);
+            this.textBox2.Location = new System.Drawing.Point(65, 80);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(111, 20);
             this.textBox2.TabIndex = 8;
@@ -117,7 +117,7 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.LightSalmon;
-            this.textBox3.Location = new System.Drawing.Point(65, 93);
+            this.textBox3.Location = new System.Drawing.Point(65, 116);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(111, 20);
             this.textBox3.TabIndex = 12;
@@ -125,7 +125,7 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.LightSalmon;
-            this.textBox4.Location = new System.Drawing.Point(65, 128);
+            this.textBox4.Location = new System.Drawing.Point(65, 151);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(111, 20);
             this.textBox4.TabIndex = 11;
@@ -135,7 +135,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.RosyBrown;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(1, 100);
+            this.label3.Location = new System.Drawing.Point(1, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 15);
             this.label3.TabIndex = 10;
@@ -146,7 +146,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.RosyBrown;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Location = new System.Drawing.Point(24, 131);
+            this.label4.Location = new System.Drawing.Point(30, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 15);
             this.label4.TabIndex = 9;
@@ -155,7 +155,7 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.LightSalmon;
-            this.textBox5.Location = new System.Drawing.Point(65, 164);
+            this.textBox5.Location = new System.Drawing.Point(65, 187);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(111, 20);
             this.textBox5.TabIndex = 16;
@@ -165,12 +165,11 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.RosyBrown;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(22, 167);
+            this.label5.Location = new System.Drawing.Point(20, 190);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 15);
             this.label5.TabIndex = 14;
             this.label5.Text = "Weight";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // dishesTableAdapter
             // 
@@ -189,25 +188,6 @@
             // 
             this.dishesTableAdapter1.ClearBeforeFill = true;
             // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.LightSalmon;
-            this.textBox6.Location = new System.Drawing.Point(65, 199);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(111, 20);
-            this.textBox6.TabIndex = 18;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.RosyBrown;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(-2, 202);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 15);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "DishTypeId";
-            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(198, 280);
@@ -216,35 +196,35 @@
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.button1_Click);
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.Location = new System.Drawing.Point(335, 280);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 32);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "UPDATE";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnUpdate.Location = new System.Drawing.Point(335, 280);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(114, 32);
+            this.btnUpdate.TabIndex = 20;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // button3
+            // btnDelate
             // 
-            this.button3.Location = new System.Drawing.Point(466, 280);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 32);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelate.Location = new System.Drawing.Point(466, 280);
+            this.btnDelate.Name = "btnDelate";
+            this.btnDelate.Size = new System.Drawing.Size(114, 32);
+            this.btnDelate.TabIndex = 21;
+            this.btnDelate.Text = "DELETE";
+            this.btnDelate.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnFind
             // 
-            this.button4.Location = new System.Drawing.Point(597, 280);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(114, 32);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "FIND";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnFind.Location = new System.Drawing.Point(597, 280);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(114, 32);
+            this.btnFind.TabIndex = 22;
+            this.btnFind.Text = "FIND";
+            this.btnFind.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
@@ -256,14 +236,35 @@
             this.listBox1.Size = new System.Drawing.Size(642, 238);
             this.listBox1.TabIndex = 23;
             // 
-            // button5
+            // btnAll
             // 
-            this.button5.Location = new System.Drawing.Point(729, 280);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 32);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "SELECT ALL";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnAll.Location = new System.Drawing.Point(729, 280);
+            this.btnAll.Name = "btnAll";
+            this.btnAll.Size = new System.Drawing.Size(114, 32);
+            this.btnAll.TabIndex = 24;
+            this.btnAll.Text = "SELECT ALL";
+            this.btnAll.UseVisualStyleBackColor = true;
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.LightSalmon;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(65, 12);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(111, 21);
+            this.comboBox1.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.RosyBrown;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Location = new System.Drawing.Point(9, 15);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 15);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Vid hrana";
             // 
             // Form1
             // 
@@ -271,14 +272,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(855, 324);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnAll);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnFind);
+            this.Controls.Add(this.btnDelate);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox3);
@@ -320,14 +321,14 @@
         private proekt4DataSetTableAdapters.__MigrationHistoryTableAdapter ___MigrationHistoryTableAdapter1;
         private DeliveryDataSet deliveryDataSet;
         private DeliveryDataSetTableAdapters.DishesTableAdapter dishesTableAdapter1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelate;
+        private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnAll;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label6;
     }
 }
 
