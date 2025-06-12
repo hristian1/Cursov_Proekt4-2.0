@@ -216,6 +216,7 @@
             this.btnDelate.TabIndex = 21;
             this.btnDelate.Text = "DELETE";
             this.btnDelate.UseVisualStyleBackColor = true;
+            this.btnDelate.Click += new System.EventHandler(this.btnDelate_Click);
             // 
             // btnFind
             // 
@@ -225,6 +226,7 @@
             this.btnFind.TabIndex = 22;
             this.btnFind.Text = "FIND";
             this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // listBox1
             // 

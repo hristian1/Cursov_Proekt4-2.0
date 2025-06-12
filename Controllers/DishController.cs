@@ -22,7 +22,7 @@ namespace Cursov_Proekt4.Controllers
         }
         public List<Dish> GetAll()
         {
-            return DB.Dishes.Include("DishTypes").ToList();
+            return DB.Dishes.Include("DishType").ToList();
         }
         public void Create(Dish dish)
         {
